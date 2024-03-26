@@ -8,9 +8,9 @@ services:
       - "7687:7687" # พอร์ตสำหรับการเชื่อมต่อ Bolt
     volumes:
       - ./data:/data # โฟลเดอร์เก็บข้อมูล
-      - ./logs:/logs
+      # - ./logs:/logs
     environment:
-      NEO4J_AUTH: neo4j/derive # ข้อมูลการเข้าสู่ระบบ
+      NEO4J_AUTH: neo4j/Nui4711jeep # ข้อมูลการเข้าสู่ระบบ
       NEO4J_dbms_memory_pagecache_size: 1G
       NEO4J_dbms_memory_heap_initial__size: 5G
       NEO4J_dbms_memory_heap_max__size: 5G
